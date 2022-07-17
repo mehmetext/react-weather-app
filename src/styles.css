@@ -1,0 +1,84 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 940px;
+}
+
+.select-country {
+    height: 80px;
+    background: #f6fafd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.select-country select {
+    border: 1px solid #c9d2db;
+    outline: 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.select-country-loading {
+    font-weight: bold;
+}
+
+.days {
+    margin-top: 10px;
+    display: flex;
+}
+
+.day {
+    flex: 1;
+    margin-right: 20px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day:last-child {
+    margin-right: 0;
+}
+
+.day-name {
+    color: #bbb;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.day img {
+    width: 64px;
+}
+
+.day-degrees {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #787878;
+    font-weight: bold;
+}
+
+.day-degrees span:last-child {
+    color: #bbbbbb;
+    margin-left: 5px;
+}
+
+.day.today {
+    border: 1px solid #ececec;
+    background: #fcfcfc;
+}
